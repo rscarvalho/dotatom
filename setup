@@ -1,0 +1,27 @@
+#!/bin/sh
+
+backup_conf() {
+  apm list -b --installed > packages.txt
+}
+
+restore_packages() {
+  apm install --package-files packages.txt
+}
+
+usage() {
+  echo Usage: ${0} {backup|restore}
+}
+
+case "$1" in
+  "backup")
+    backup_conf
+  ;;
+
+  "restore")
+    restore_packages
+  ;;
+
+  *)
+    usage
+  ;;
+esac
