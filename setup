@@ -5,7 +5,7 @@ backup_conf() {
 }
 
 restore_packages() {
-  apm install --package-files packages.txt
+  apm install --packages-file packages.txt
 }
 
 usage() {
