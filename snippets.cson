@@ -16,3 +16,12 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+'.source.js':
+  'use es6':
+    'prefix': 'es6'
+    'body': "'use es6';\n"
+
+  'import es6 module':
+    'prefix': 'imp'
+    'body': "import ${1:ModuleName} from '${2:$1}';$3"

@@ -1,31 +1,50 @@
 "*":
   "exception-reporting":
-    userId: "40a36d7e-91ec-5987-8a27-1f63b48ce4ca"
+    userId: "ef6dbf64-d6d6-089b-4fb5-c0247d65b442"
   welcome:
     showOnStartup: false
+  linter:
+    statusBar: "Show error of the selected line"
   core:
     themes: [
       "atom-material-ui"
       "chester-atom-syntax"
     ]
+    disabledPackages: [
+      "MavensMate-Atom"
+      "language-babel"
+    ]
   editor:
     invisibles: {}
+    showIndentGuide: true
+    fontSize: 17
     scrollPastEnd: true
-    fontSize: 16
     lineHeight: 1.3
     fontFamily: "Anonymous Pro"
-    showIndentGuide: true
-  linter: {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    showRuleIdInMessage: true
+  "language-babel":
+    transpileOnSave: false
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
   nuclide:
     remoteProjectsConfig: []
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
-  "one-dark-ui": {}
+  "MavensMate-Atom":
+    mm_workspace: [
+      "/Users/rcarvalho/code/mavensmate"
+    ]
+    mm_api_version: "34"
+    mm_compile_check_conflicts: true
+  "isotope-ui": {}
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+  "tool-bar":
+    position: "Left"
   "atom-material-ui":
-    slimScrollbar: true
+    accentColor: "Cyan"
     panelContrast: true
     depth: true
-    accentColor: "Cyan"
-  "git-plus": {}
+    altCmdPalette: true
+  Termrk:
+    fontFamily: "Source Code Pro for Powerline"
