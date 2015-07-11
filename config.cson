@@ -5,6 +5,7 @@
     showOnStartup: false
   linter:
     statusBar: "Show error of the selected line"
+    showErrorTabLine: true
   core:
     themes: [
       "atom-material-ui"
@@ -48,3 +49,5 @@
     altCmdPalette: true
   Termrk:
     fontFamily: "Source Code Pro for Powerline"
+  react: {}
+  "highlight-line": {}
