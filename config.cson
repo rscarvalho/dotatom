@@ -8,12 +8,14 @@
     showErrorTabLine: true
   core:
     themes: [
-      "atom-material-ui"
+      "one-dark-ui"
       "chester-atom-syntax"
     ]
     disabledPackages: [
       "MavensMate-Atom"
       "language-babel"
+      "coffee-compile"
+      "language-jsx"
     ]
   editor:
     invisibles: {}
@@ -25,6 +27,8 @@
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
     showRuleIdInMessage: true
+    globalNodePath: "/opt/boxen/nodenv/versions/v0.10.38"
+    useGlobalEslint: true
   "language-babel":
     transpileOnSave: false
   "file-watcher":
@@ -51,3 +55,4 @@
     fontFamily: "Source Code Pro for Powerline"
   react: {}
   "highlight-line": {}
+  "flex-tool-bar": {}

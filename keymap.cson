@@ -26,3 +26,6 @@
 
 'atom-workspace':
   'ctrl-p': 'termrk:toggle'
+
+'atom-text-editor':
+  'cmd-shift-c': 'color-picker:open'
