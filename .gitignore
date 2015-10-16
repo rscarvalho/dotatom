@@ -8,3 +8,5 @@ storage/
 packages/
 .apm/
 .node-gyp
+
+projects.cson

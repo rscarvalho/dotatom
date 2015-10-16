@@ -25,3 +25,19 @@
   'import es6 module':
     'prefix': 'imp'
     'body': "import ${1:ModuleName} from '${2:$1}';$3"
+
+  'import react module':
+    'prefix': 'irea'
+    'body': "import React from 'react';\n$1"
+
+  'declare React component':
+    'prefix': 'rcomp'
+    'body': 'export default React.createClass({\n  render() {\n $1 \n  }\n});'
+
+  'export es5 module':
+    'prefix': 'expd'
+    'body': 'export default'
+
+  'import Immutable':
+    'prefix': 'iimm'
+    'body': "import Immutable from 'Immutable';\n$1"

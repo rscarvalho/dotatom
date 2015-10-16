@@ -9,18 +9,16 @@
   core:
     themes: [
       "one-dark-ui"
-      "chester-atom-syntax"
+      "oceanic-next"
     ]
     disabledPackages: [
-      "MavensMate-Atom"
       "language-babel"
-      "coffee-compile"
       "language-jsx"
     ]
   editor:
     invisibles: {}
     showIndentGuide: true
-    fontSize: 17
+    fontSize: 21
     scrollPastEnd: true
     lineHeight: 1.3
     fontFamily: "Anonymous Pro"
@@ -36,23 +34,25 @@
   nuclide:
     remoteProjectsConfig: []
   "MavensMate-Atom":
-    mm_workspace: [
-      "/Users/rcarvalho/code/mavensmate"
-    ]
-    mm_api_version: "34"
-    mm_compile_check_conflicts: true
+    mm_panel_height: 533
   "isotope-ui": {}
   "vim-mode":
     useClipboardAsDefaultRegister: true
   "tool-bar":
     position: "Left"
   "atom-material-ui":
-    accentColor: "Cyan"
     panelContrast: true
     depth: true
     altCmdPalette: true
+    compactTreeView: true
+    showTabIcons: "Show on all tabs"
+    accentColor: "Cyan"
   Termrk:
     fontFamily: "Source Code Pro for Powerline"
-  react: {}
+  react:
+    enabledForAllJavascriptFiles: true
   "highlight-line": {}
   "flex-tool-bar": {}
+  "merge-conflicts": {}
+  "highlight-selected":
+    onlyHighlightWholeWords: true
