@@ -8,8 +8,8 @@
     showErrorTabLine: true
   core:
     themes: [
-      "one-dark-ui"
-      "oceanic-next"
+      "one-light-ui"
+      "solarized-light-syntax"
     ]
     disabledPackages: [
       "language-babel"

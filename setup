@@ -9,7 +9,7 @@ restore_packages() {
 }
 
 usage() {
-  echo Usage: ${0} {install|save-deps}
+  echo "Usage: ${0} {install|save-deps}"
 }
 
 case "$1" in
