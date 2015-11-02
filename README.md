@@ -7,7 +7,7 @@ It aims to have as few unnecessary files as possible to reduce commit noise and 
 ## Installation
 
 1. Clone this repository: `git clone https://github.com/rscarvalho/dotatom.git ~/.atom`
-2. Run the setup script: `./setup restore`
+2. Run the setup script: `./setup install`
 3. Profit :-)
 
 ## Caveats
