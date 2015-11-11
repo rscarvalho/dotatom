@@ -6,10 +6,11 @@
   linter:
     statusBar: "Show error of the selected line"
     showErrorTabLine: true
+    errorPanelHeight: 109
   core:
     themes: [
       "atom-material-ui"
-      "atom-material-syntax-light"
+      "atom-material-syntax"
     ]
     disabledPackages: [
       "language-babel"
