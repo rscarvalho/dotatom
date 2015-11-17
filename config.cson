@@ -15,6 +15,8 @@
     disabledPackages: [
       "language-babel"
       "language-jsx"
+      "flex-tool-bar"
+      "tool-bar"
     ]
   editor:
     invisibles: {}
@@ -62,3 +64,4 @@
     onlyHighlightWholeWords: true
     lightTheme: true
     highlightBackground: true
+  "git-plus": {}
