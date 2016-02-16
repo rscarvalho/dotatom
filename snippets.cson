@@ -32,12 +32,48 @@
 
   'declare React component':
     'prefix': 'rcomp'
-    'body': 'export default React.createClass({\n  render() {\n $1 \n  }\n});'
+    'body': """
+      'use es6';
 
-  'export es5 module':
+      import React from 'react';
+
+      export default React.createClass({
+        render() {
+          return (
+            <div>$1</div>
+          );
+        }
+      });
+    """
+
+  'export es6 module':
     'prefix': 'expd'
     'body': 'export default'
 
   'import Immutable':
     'prefix': 'iimm'
     'body': "import Immutable from 'Immutable';\n$1"
+
+  'arrow function with body':
+    'prefix': '=}'
+    'body': """
+      ($1) => {
+        $2
+      }
+    """
+
+  'jasmine describe':
+    'prefix': 'desc'
+    'body': """
+      describe('$1', () => {
+        $2
+      });
+    """
+
+  'jasmine "it"':
+    'prefix': 'it'
+    'body': """
+      it('$1', () => {
+        $2
+      });
+    """
