@@ -19,12 +19,12 @@
       "vim-mode-plus"
     ]
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     fontFamily: "Menlo"
-    fontSize: 17
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.3
     scrollPastEnd: true
