@@ -4,27 +4,47 @@
   Termrk:
     fontFamily: "Source Code Pro for Powerline"
   "atom-material-ui":
-    accentColor: "Orange"
-    altCmdPalette: true
-    compactTreeView: true
-    depth: true
-    panelContrast: true
-    showTabIcons: "Show on all tabs"
-    tabSize: "Small"
+    colors:
+      abaseColor:
+        alpha: 1
+        blue: 80
+        green: 83
+        red: 239
+      accentColor:
+        alpha: 1
+        blue: 255
+        green: 252
+        red: 89
+      genAccent: true
+      predefinedColor: "Red"
+    fonts: {}
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   core:
     disabledPackages: [
       "language-babel"
       "language-jsx"
       "tool-bar"
       "vim-mode-plus"
+      "seti-icons"
     ]
+    packagesWithKeymapsDisabled: [
+      "atom-material-ui"
+    ]
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "oceanic-next"
     ]
   editor:
-    fontFamily: "Menlo"
-    fontSize: 15
+    fontFamily: "Fira Code"
     invisibles: {}
     lineHeight: 1.3
     scrollPastEnd: true
@@ -37,6 +57,7 @@
   "flex-tool-bar": {}
   "git-plus": {}
   "highlight-line":
+    enableBackgroundColor: false
     hideHighlightOnSelect: true
   "highlight-selected":
     highlightBackground: true
@@ -50,6 +71,7 @@
     showErrorTabLine: true
     statusBar: "Show error of the selected line"
   "linter-eslint":
+    disableFSCache: true
     disableWhenNoEslintrcFileInPath: true
     globalNodePath: "/opt/boxen/homebrew"
     showRuleIdInMessage: true
@@ -57,8 +79,18 @@
   "merge-conflicts": {}
   nuclide:
     remoteProjectsConfig: []
+  "one-dark-ui": {}
+  "open-terminal-here": {}
   react:
     enabledForAllJavascriptFiles: true
+  "seti-icons":
+    iconsPlus: true
+  "terminal-plus":
+    core: {}
+    style:
+      theme: "dracula"
+    toggles:
+      autoClose: true
   "tool-bar":
     position: "Left"
   "tree-view":

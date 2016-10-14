@@ -8,14 +8,24 @@
  * http://www.lesscss.org
  */
 
-.tree-view {
+ body {
+   -webkit-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga" 1;
+    text-rendering: optimizeLegibility;
+ }
 
+.tree-view {
+  -webkit-font-smoothing: auto;
 }
 
 // style the background and foreground colors on the atom-text-editor-element
 // itself
 atom-text-editor {
   -webkit-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+
+  padding-top: 10px;
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow

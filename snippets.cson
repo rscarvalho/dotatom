@@ -46,6 +46,24 @@
       });
     """
 
+  'delclare flux store':
+    'prefix': 'gstore'
+    'body': """
+      'use es6';
+
+      import GeneralStore from 'GeneralStore';
+      import dispatcher from 'hubspot.flux.dispatcher';
+      // import ActionTypes from '../constants/ActionTypes';
+      import Immutable from 'Immutable';
+
+      export default GeneralStore.defineFactory()
+        .defineGetInitialState(Immutable.Map)
+        .defineResponses({
+          // ... action responders here
+        })
+        .register(dispatcher);
+    """
+
   'export es6 module':
     'prefix': 'expd'
     'body': 'export default'
